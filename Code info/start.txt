@@ -1,0 +1,3 @@
+npx tsx-node script.ts "C:\AWS3"
+npx tsx script.ts C:\AWS3  - завелось
+npx tsx scriptV2.ts C:\AWS3

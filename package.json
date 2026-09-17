@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "archiver": "^8.0.0",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/archiver": "^8.0.0",
+    "@types/node": "^22.20.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

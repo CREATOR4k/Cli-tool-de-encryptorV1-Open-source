@@ -1,0 +1,114 @@
+PS C:\AWS3> npm install commander picocolors && npm install -D typescript ts-node @types/node
+>> 
+строка:1 знак:34
++ npm install commander picocolors && npm install -D typescript ts-node ...
++                                  ~~
+Лексема "&&" не является допустимым разделителем операторов в этой версии.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ 
+PS C:\AWS3> npm install commander picocolors                                                 
+
+added 2 packages in 629ms
+PS C:\AWS3> npm install -D typescript ts-node @types/node
+
+added 21 packages, and audited 24 packages in 31s
+
+found 0 vulnerabilities
+PS C:\AWS3> npx ts-node script.js "C:\AWS3"
+node:internal/modules/cjs/loader:1568
+  throw err;
+  ^
+
+Error: Cannot find module './script.js'
+Require stack:
+- C:\AWS3\imaginaryUncacheableRequireResolveScript
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at require.resolve (node:internal/modules/helpers:175:31)
+    at requireResolveNonCached (C:\AWS3\node_modules\ts-node\dist\bin.js:549:16)
+    at getProjectSearchDir (C:\AWS3\node_modules\ts-node\dist\bin.js:519:40)
+    at phase3 (C:\AWS3\node_modules\ts-node\dist\bin.js:267:27)
+    at bootstrap (C:\AWS3\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\AWS3\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\AWS3\node_modules\ts-node\dist\bin.js:579:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\AWS3\\imaginaryUncacheableRequireResolveScript' ]
+}
+
+Node.js v24.21.0
+PS C:\AWS3> npx ts-node script.ts "C:\AWS3"
+C:\AWS3\node_modules\ts-node\dist\configuration.js:91
+    const { fileExists = ts.sys.fileExists, readFile = ts.sys.readFile, skipProject = index_1.DEFAULTS.skipProject, project = index_1.DEFAULTS.project, tsTrace = index_1.DEFAULTS.tsTrace, } = rawApiOptions;
+                                ^
+
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+    at readConfig (C:\AWS3\node_modules\ts-node\dist\configuration.js:91:33)
+    at findAndReadConfig (C:\AWS3\node_modules\ts-node\dist\configuration.js:50:84)
+    at phase3 (C:\AWS3\node_modules\ts-node\dist\bin.js:254:67)
+    at bootstrap (C:\AWS3\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\AWS3\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\AWS3\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+
+Node.js v24.21.0
+PS C:\AWS3> npm install -D tsx
+>>
+
+added 3 packages, and audited 27 packages in 21s
+
+found 0 vulnerabilities
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+PS C:\AWS3> npx ts-node script.ts "C:\AWS3"
+C:\AWS3\node_modules\ts-node\dist\configuration.js:91
+    const { fileExists = ts.sys.fileExists, readFile = ts.sys.readFile, skipProject = index_1.DEFAULTS.skipProject, project = index_1.DEFAULTS.project, tsTrace = index_1.DEFAULTS.tsTrace, } = rawApiOptions;
+                                ^
+
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+    at readConfig (C:\AWS3\node_modules\ts-node\dist\configuration.js:91:33)
+    at findAndReadConfig (C:\AWS3\node_modules\ts-node\dist\configuration.js:50:84)
+    at phase3 (C:\AWS3\node_modules\ts-node\dist\bin.js:254:67)
+    at bootstrap (C:\AWS3\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\AWS3\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\AWS3\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+
+Node.js v24.21.0
+PS C:\AWS3> npx tsx-node script.ts "C:\AWS3"
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/tsx-node - Not found
+npm error 404
+npm error 404  The requested resource 'tsx-node@*' could not be found or you do not have permission to access it.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\Admin\AppData\Local\npm-cache\_logs\2026-09-16T08_38_59_886Z-debug-0.log
+PS C:\AWS3> npm install -D tsx
+>>
+
+up to date, audited 27 packages in 605ms
+
+found 0 vulnerabilities
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+PS C:\AWS3> npx tsx-node script.ts
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/tsx-node - Not found
+npm error 404
+npm error 404  The requested resource 'tsx-node@*' could not be found or you do not have permission to access it.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\Admin\AppData\Local\npm-cache\_logs\2026-09-16T08_40_32_637Z-debug-0.log
