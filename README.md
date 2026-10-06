@@ -1,8 +1,5 @@
 # media-backup 🗜️
 
-[![Node.js Version](https://shields.io)](https://nodejs.org)
-[![Language](https://shields.io)](https://typescriptlang.org)
-
 **media-backup** — это интерактивная CLI-утилита для сканирования директорий, поиска тяжелых файлов и их автоматического сжатия в ZIP-архивы с последующим удалением оригиналов.
 
 ---
