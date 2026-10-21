@@ -78,7 +78,7 @@ node dist/index.js ./my-media-folder --size 50
 
 ---
 
-## 📸 Пример работы CLI
+## 📸 Пример ## работы CLI
 
 ```text
  📂 Welcome to Cli-encrypt-tool 📂 
